@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Visual Design and Illustration Portfolio | Orsolya Lukacs </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <meta name="description" content="A portfolio showing Paintings, Illustrations, 3d renders and other Visual Designs by Orsolya Lukacs. Available for freelance illustration and design work."/>
+        <meta name="keywords" content="Orsolya Lukacs, Creative Apricot, creativeapricot, Sweden, illustrator, designer, web design, graphic design, painting, 3d, blender, low-poly, impressionist, concept art, design, visual" />
+        <meta name="author" content="Orsolya Lukacs" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" type="text/javascript" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="css/styles.min.css">
+        <!--[if IE]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body> 
+    <!-- Navigation -->
+    <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light fixed-top rounded" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header ml-auto">
+                        <button type="button" class="navbar-toggler" role="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-label="Toggle navigation" aria-expanded="false" aria-controls="#bs-example-navbar-collapse-1">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand" href="../index.html">creative apricot</a>
+                    </div>
+    
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right ml-auto">
+                            <li class="nav-item">
+                                <li class="dropdown">
+                                    <button class="btn btn-lg dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:white; border:none!important;">portfolio
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="paintings.html">paintings</a>
+                                        <a class="dropdown-item" href="illustrations.html">illustrations</a>
+                                        <a class="dropdown-item" href="renders.html">3d</a>
+                                    </ul>
+                                </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="about-link" href="about.html">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-link" href="contact.html">contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="change-hu" href="#">HU</a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>    
+            </nav>
+        </div>
+    <header>
+    </header>
+    <!-- Page Content EN-->
+    <section id="contact-page" class="content-section text-center">
+        <div class="contact-section">
+            <div class="container container-en" id="contact-container-en">
+              <h2>Contact</h2>
+              <p>Contact me here if you would like to inquire about the artworks or looking for more information.</p>
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <form class="form-horizontal" id="form" role="form" method="post">
+                    <div class="form-group">
+                      <label for=name>Name</label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="name" required="required">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="email" required="required">
+                    </div>
+                    <div class="form-group ">
+                      <label for="message">Message</label>
+                     <textarea class="form-control" maxlength="6000" required placeholder="message" id="message" name="message"></textarea> 
+                    </div>
+                    <button type="submit" class="btn btn-default">Send</button>
+                  </form>
+                  <hr>
+                </div>
+                <div id="success_message" style="width:100%; height:100%; display:none; ">
+                    <h3>Posted your message successfully!</h3>
+                </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Sorry there was an error sending your form.
+                </div>
+              </div>
+            </div>   
+            <!--container HU-->
+            <div class="container container-hu" id="contact-container-hu" style="display:none">
+                    <h2>Kapcsolat</h2>
+                    <p>Lépj velem kapcsolatba itt, hogyha szeretnél több információt a munkákkal kapcsolatban.</p>
+                    <div class="row">
+                      <div class="col-md-8 col-md-offset-2">
+                        <form method="post" role="form" class="form-horizontal" id="form">
+                          <div class="form-group">
+                            <label for="name">Név</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="név" required="required">
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="email cím" required="required">
+                          </div>
+                          <div class="form-group ">
+                            <label for="message">Üzenet</label>
+                           <textarea class="form-control" maxlength="6000" id="message" name="message" placeholder="üzenet" required></textarea> 
+                          </div>
+                          <button type="submit" class="btn btn-default">Küldj üzenetet</button>
+                        </form>
+                        <hr>
+                      </div>
+                      <div id="success_message" style="width:100%; height:100%; display:none; ">
+                          <h3>Üzenetedet sikeresen elküldtük!</h3>
+                      </div>
+                      <div id="error_message" style="width:100%; height:100%; display:none; ">
+                          <h3>Hiba</h3>
+                          Sajnálom, valami hiba történt.
+                  </div>
+                </div>
+              </div>  
+             <!-- Footer -->
+                    <div class="icons">
+                            <a href="mailto:orchie.lucas@gmail.com">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.behance.net/orsisi" target="_blank" rel="noopener noreferrer"><i class="fa fa-behance icon" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://instagram.com/creativeapricot" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram icon" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/orsoja/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin icon" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.pinterest.se/creativeapricot/" target="_blank" rel="noopener noreferrer"><i class="fa fa-pinterest icon" aria-hidden="true"></i>
+                            </a>
+                    </div>  
+                <div class="container">
+                    <p class="m-0 text-center" id="footer">&copy; creative apricot, 2018</p>
+                </div>
+                <!-- /.container -->
+        </div>
+      </section>
+    <!-- JavaScript -->    
+            <!-- <script src="js/jquery.easing.1.3.js"></script> -->
+            <script src="js/contact.min.js"></script>
+            <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
