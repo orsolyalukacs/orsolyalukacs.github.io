@@ -43,7 +43,6 @@ a:active {
   visibility: visible;
   z-index: 999;
   display: border-box;
-  border-bottom: 0.3rem solid #cfeffc !important;
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder; }
 
