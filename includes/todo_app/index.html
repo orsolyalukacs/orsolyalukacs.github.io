@@ -1,0 +1,45 @@
+<!--index.html-->
+
+<!doctype html>
+<html>
+    <head>
+        <title>To-do app</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+            <div class="check"></div>
+            <div class="edited"></div>
+            <div class="submitted"></div>
+        <form>
+             <input type="text" id="ListTitle" placeholder="To-Do List">
+        </form>
+        <div class="container">
+            
+            <ul id="todoList" class="todoList"></ul>
+        </div>
+        <div class="tableContainer">
+            <div class="tableRow">
+                <form id = "MyForm" onsubmit="getFormData();return false">
+                    <input class ="input" type="text" id="task" placeholder="get bread">
+                    <span class = "border"></span>
+                </form>
+            </div>
+            <div class="tableRow">
+                    <div class="buttons">
+                        <button id="submit"><i class="far fa-plus-square fa-2x"></i></button> 
+                        <button id="update"><i class="fas fa-sync-alt fa-2x"></i></button>
+                    </div>
+            </div>
+        </div>  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TimelineMax.min.js"></script>
+        <script src="js/todos.js"></script>
+    </body>
+</html>

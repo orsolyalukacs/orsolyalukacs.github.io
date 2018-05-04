@@ -1,0 +1,295 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat.otf");
+  src: url("../fonts/Montserrat.ttf") format("truetype");
+  src: url("../fonts/Montserrat.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fa-regular.svg") format("svg");
+  src: url("../fonts/fa-regular-400.eot") format("embedded-open");
+  src: url("../fonts/fa-regular-400.ttf") format("truetype");
+  src: url("../fonts/fa-regular-400.woff") format("woff");
+  src: url("../fonts/fa-regular-400.woff2") format("woff2"); }
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url("../fonts/Montserrat-Medium.otf");
+  src: url("../fonts/Montserat-Medium.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  display: flex;
+  font-size: 1rem;
+  margin: auto;
+  max-width: 100vw;
+  background-color: #1d6aa8;
+  font-family: "Montserrat", sans-serif;
+  text-align: left; }
+
+:focus {
+  outline: none; }
+
+.tableContainer {
+  position: fixed;
+  margin: auto;
+  bottom: 0;
+  width: 100vw; }
+
+.tableRow {
+  width: 100vw;
+  margin: auto;
+  background: #071826; }
+
+.container {
+  position: fixed;
+  height: 70vh;
+  top: 10vh;
+  overflow-y: scroll; }
+  .container ul {
+    font-family: "Montserrat Medium", sans-serif;
+    font-weight: 400;
+    height: 70vh;
+    padding: 0;
+    color: #fff;
+    list-style: none;
+    font-size: 1.414rem;
+    line-height: normal; }
+    .container ul li:nth-child(even) {
+      background: #164f7d;
+      position: relative; }
+    .container ul li:nth-child(odd) {
+      background: #124167;
+      position: relative; }
+    .container ul li {
+      padding: 15px 5px;
+      left: 0; }
+      .container ul li span.delete, .container ul li span.edit {
+        display: inline-block;
+        position: relative;
+        cursor: pointer; }
+
+input[type="text"] {
+  width: 100%; }
+
+.input {
+  padding: 0 0;
+  line-height: normal; }
+
+.input ~ .border {
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 6px;
+  background-color: white;
+  border: 0; }
+
+.input:focus ~ .border {
+  width: 100%;
+  transition: 0.4s; }
+
+#todoList {
+  position: relative; }
+
+#task, #ListTitle {
+  color: #F27935;
+  text-align: left;
+  padding: 5px 10px; }
+
+#task {
+  border-top: 4px solid #fcac22;
+  position: relative;
+  font-size: 2rem; }
+
+#ListTitle {
+  margin: auto;
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  z-index: 10;
+  border-bottom: 4px solid #F27935;
+  font-size: 2rem;
+  padding-left: 10px; }
+
+button {
+  border: none;
+  padding: 5px;
+  margin-top: 0.7rem;
+  width: auto;
+  background: transparent;
+  color: #F27935;
+  line-height: normal; }
+
+input[type=text] {
+  background: #071826;
+  border-radius: 6px; }
+
+input#task {
+  background: white;
+  border: 6px solid #3692dc; }
+
+::-webkit-input-placeholder {
+  color: #fcac22; }
+
+::-moz-placeholder {
+  color: #fcac22; }
+
+:-ms-input-placeholder {
+  color: #fcac22; }
+
+:-moz-placeholder {
+  color: #fcac22; }
+
+#update {
+  float: right; }
+
+#submit, #update {
+  position: relative;
+  bottom: 10px;
+  font-size: 1.4rem;
+  padding: 0.4rem;
+  padding-left: 0.7rem; }
+
+.edit {
+  position: relative;
+  float: right; }
+
+.edit:before {
+  content: "\f044";
+  font-family: FontAwesome;
+  position: inherit;
+  font-size: 2rem;
+  top: 0;
+  padding: 10px;
+  text-rendering: optimizeLegibility;
+  display: inline;
+  z-index: 10; }
+
+.delete {
+  position: absolute;
+  float: right; }
+
+.delete:before {
+  content: "\f14a";
+  font-family: FontAwesome;
+  position: inherit;
+  font-size: 2rem;
+  top: 0;
+  padding: 10px;
+  color: #fff;
+  text-rendering: optimizeLegibility;
+  display: inline;
+  z-index: 10; }
+
+.check {
+  background-image: url("../fonts/checkbox.png"); }
+
+.edited {
+  background-image: url("../fonts/edited.png"); }
+
+.submitted {
+  background-image: url("../fonts/submitted.png"); }
+
+.check, .edited, .submitted {
+  position: fixed;
+  top: 20vh;
+  left: 7vw;
+  display: inline-block;
+  z-index: 10;
+  height: 300px;
+  width: 300px;
+  visibility: hidden; }
+
+@media (min-width: 375px) {
+  .check, .edited, .submitted {
+    top: 15vh;
+    left: 15vw; }
+  #ListTitle, #task {
+    font-size: 2rem; }
+  #submit, #update {
+    font-size: 1.7rem;
+    padding: 0.4rem;
+    padding-left: 0.4rem; } }
+
+@media (min-width: 425px) {
+  .check, .edited, .submitted {
+    top: 20vh;
+    left: 20vw; } }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 100vw; }
+  #ListTitle, #task {
+    font-size: 2.2rem; }
+  #submit, #update {
+    font-size: 2rem;
+    padding: 0.4rem;
+    padding-left: 0.7rem; } }
+
+@media (min-width: 768px) {
+  body {
+    margin: auto; }
+  .tableContainer, .tableRow, .container {
+    width: 100vw;
+    max-width: 100vw; }
+  .container {
+    overflow-y: scroll; }
+  .check, .edited, .submitted {
+    top: 20vh;
+    left: 30vw; }
+  span {
+    font-size: 1.7rem; }
+  #ListTitle, #task {
+    font-size: 2.4rem; }
+  #submit, #update {
+    font-size: 2.4rem;
+    padding: 0.4rem;
+    padding-left: 0.7rem; } }
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 2.4rem;
+    margin: auto; }
+  span {
+    font-size: 2.4rem; }
+  .check, .edited, .submitted {
+    top: 20vh;
+    left: 40vw; }
+  #ListTitle, #task {
+    font-size: 3.4rem; }
+  #submit, #update {
+    font-size: 2.8rem;
+    padding: 0.4rem;
+    padding-left: 1rem; }
+  ::-webkit-scrollbar-track {
+    background-color: #f7a97d; }
+  ::-webkit-scrollbar {
+    width: 20px; }
+  ::-webkit-scrollbar-thumb {
+    background-color: #F27935; }
+  .tableContainer, .tableRow, .container {
+    width: 100vw;
+    max-width: 100vw; }
+  .container {
+    overflow-y: scroll; }
+  .buttons {
+    margin: 5px; }
+  li {
+    color: white; }
+  .delete:before, .edit:before {
+    font-size: 2.4rem; } }
+
+@media (min-width: 1440px) {
+  body {
+    font-size: 4rem; }
+  .delete:before, .edit:before {
+    font-size: 3rem; }
+  #ListTitle {
+    font-size: 4rem; }
+  #submit, #update {
+    font-size: 3rem;
+    padding-left: 1.4rem; } }
