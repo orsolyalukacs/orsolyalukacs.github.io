@@ -4,8 +4,8 @@
 		<title>Illustration and Fine Art Portfolio | Creative Apricot </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-        <meta name="description" content="A portfolio showing Paintings, Illustrations, 3d renders and other Visual Designs by Orsolya Lukacs. Available for freelance illustration and design work."/>
-        <meta name="keywords" content="Orsolya Lukacs, Creative Apricot, creativeapricot, Sweden, illustrator, designer, web design, graphic design, painting, 3d, blender, low-poly, impressionist, concept art, design, visual" />
+        <meta name="description" content="A portfolio showing Paintings, Illustrations, 3d renders and other Visual Designs by Orsolya Lukacs."/>
+        <meta name="keywords" content="Orsolya Lukacs, Creative Apricot, creativeapricot, Sweden, illustrator, designer, web design, web developer, frontend, painting, 3d, blender, low-poly, design, visual" />
         <meta name="author" content="Orsolya Lukacs" />
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" type="text/javascript" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -26,7 +26,7 @@
     </head>
     <body> 
     <!-- Navigation -->
-    <div class="container">
+    <section class="main-container container">
         <nav class="navbar navbar-expand-md navbar-light fixed-top rounded" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header ml-auto">
@@ -35,7 +35,6 @@
                     </button>
                     <a class="navbar-brand" href="index.html">creative apricot</a>
                 </div>
-
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right ml-auto">
                         <li class="nav-item">
@@ -46,8 +45,7 @@
                                     <a class="dropdown-item" href="includes/paintings.html">paintings</a>
                                     <a class="dropdown-item" href="includes/illustrations.html">illustrations</a>
                                     <a class="dropdown-item" href="includes/renders.html">3d</a>
-                                    <a class="dropdown-item" href="includes/todo_app/index.html">app</a>
-
+                                    <a class="dropdown-item" href="includes/todo_app/index.html">to-do app</a>
                                 </ul>
                             </li>
                         </li>
@@ -64,14 +62,14 @@
                 </div>
             </div>    
         </nav>
-    </div>
+    </section>
     <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
                 <!-- Slide One -->
@@ -84,37 +82,31 @@
                 <div class="carousel-item" style="background-image: url(img/bg/before3.jpg)">
                 </div>
                 <!-- Slide Four -->
-                <!-- <div class="carousel-item" style="background-image: url(img/bg/after2.jpg)">
-                </div> -->
-                <!-- Slide Five -->    
                 <div class="carousel-item" style="background-image: url(img/bg/before2.jpg)">
                 </div>
-                <!-- Slide Six    
-                <div class="carousel-item" style="background-image: url(img/bg/before.jpg)">
-                </div> -->
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
             </a>
-      </div>
+        </div>
     </header>
     <!-- Page Content -->
     <div class="mask"></div>
     <div class="col-lg-8 col-md-6 col-sm-6 col-xs-6" id="about">
-      <div class="container" id="quote-en">
-        “If you truly love nature, you will find beauty everywhere.”
-          /Vincent Van Gogh/          
-      </div>
-      <div class="container" id="quote-hu">
+        <blockquote class="quote-container container" id="quote-en">
+            “Falling in love with code means falling in love with problem solving and being a part of a forever ongoing conversation.” - Kathryn Barrett.      
+            "Simplicity is about subtracting the obvious and adding the meaningful." - John Maeda
+        </blockquote>
+        <blockquote class="quote-container container" id="quote-hu">
             “Ha igazán szereted a természetet, mindenhol megtalálod a szépséget.” <br>
             /Vincent Van Gogh/           
-          </div>
-        </div>
+        </blockquote>
+    </div>
     <!-- Footer -->
     <footer class="col-lg-4-right col-md-6-right col-sm-6-right col-xs-12" id="contact">
         <div class="icons">
@@ -136,8 +128,8 @@
       <!-- /.container -->
     </footer>
     <!-- JavaScript -->  
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-            <script src="js/main.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
