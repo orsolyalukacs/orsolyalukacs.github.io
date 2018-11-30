@@ -37,8 +37,8 @@ $brightorange: #F27935;
 
 //mobile
 body{
-//    opacity: 1;
-//    transition: 1s opacity;
+// opacity: 1;
+// transition: 1s opacity;
    display: flex;
    font-size:1rem;
    margin: auto;
@@ -154,7 +154,7 @@ input[type = "text"] {
     height: 10vh;
     z-index:10;
     border-bottom: 4px solid $brightorange;
-    font-size: 2rem;
+    font-size: 1.4rem;
     padding-left: 10px;
 }
 
@@ -354,7 +354,7 @@ input#task{
       }
 
       #ListTitle, #task{
-        font-size: 3.4rem;
+        font-size: 1.8rem;
     }   
 
     #submit, #update {
