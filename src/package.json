@@ -1,0 +1,43 @@
+{
+  "name": "orsisi.github.io",
+  "version": "1.0.0",
+  "description": "A portfolio website for creatice apricot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "dev": "brunch w",
+    "build": "brunch b -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orsisi/orsisi.github.io.git"
+  },
+  "author": "Orchie Lucas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orsisi/orsisi.github.io/issues"
+  },
+  "homepage": "https://github.com/orsisi/orsisi.github.io#readme",
+  "devDependencies": {
+    "auto-reload-brunch": "2.7.1",
+    "autoprefixer": "8.4.1",
+    "babel-brunch": "^6.1.1",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "brunch": "^2.10.17",
+    "sass-brunch": "2.10.4",
+    "spostcss-brunch": "1.0.1",
+    "uglify-js-brunch": "2.10.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
+    "domready": "1.0.8",
+    "eslint-brunch": "^3.12.0",
+    "jquery": "^3.3.1",
+    "magnific-popup": "^1.1.0",
+    "popper.js": "^1.14.4",
+    "swiper": "^4.4.1"
+  }
+}
