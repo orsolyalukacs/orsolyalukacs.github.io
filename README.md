@@ -4,5 +4,5 @@ A portfolio website for my art projects and illustrations.
 
 ### Note
 ```
-I am currently editing the site's content and design.
+I am currently redesigning the website.
 ```
