@@ -31,7 +31,7 @@
     "uglify-js-brunch": "2.10.0"
   },
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "domready": "1.0.8",
     "eslint-brunch": "^3.12.0",
