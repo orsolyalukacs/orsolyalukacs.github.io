@@ -39,6 +39,6 @@
     "jquery": "^3.5.0",
     "magnific-popup": "^1.1.0",
     "popper.js": "^1.14.4",
-    "swiper": "^4.4.1"
+    "swiper": "^6.5.1"
   }
 }
