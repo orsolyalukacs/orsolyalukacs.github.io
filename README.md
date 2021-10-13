@@ -4,5 +4,5 @@ A portfolio website for my art projects and illustrations.
 
 ### Note
 ```
-I am currently redesigning the website.
+It was my first portfolio website. I used masonry effect in the gallery.
 ```
